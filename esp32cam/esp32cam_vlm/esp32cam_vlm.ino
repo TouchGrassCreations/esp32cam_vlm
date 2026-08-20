@@ -1,15 +1,11 @@
 #include "esp_camera.h"
 #include <WiFi.h>
 #include <HTTPClient.h>
+#include "secrets.h"
 
-// ====== CHANGE THESE ======
-const char* WIFI_SSID = "HONOR";
-const char* WIFI_PASSWORD = "test0103";
-
-// Laptop IPv4 address, e.g. 192.168.1.20
-const char* SERVER_IP = "10.188.210.69";
+// Wi-Fi credentials and SERVER_IP live in secrets.h (gitignored).
+// Copy secrets.h.example to secrets.h and fill in your own values.
 const int SERVER_PORT = 8000;
-// ===========================
 
 String serverUrl;
 
