@@ -36,10 +36,13 @@ Open:
 
 This firmware targets the common AI Thinker ESP32-CAM.
 
-Edit:
+Copy `esp32cam/esp32cam_vlm/secrets.h.example` to
+`esp32cam/esp32cam_vlm/secrets.h` and fill in:
 - WIFI_SSID
 - WIFI_PASSWORD
 - SERVER_IP
+
+`secrets.h` is gitignored so your credentials never get committed.
 
 Then upload with Arduino IDE / PlatformIO.
 
